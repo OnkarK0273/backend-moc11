@@ -21,7 +21,7 @@ app.use("/book",bookRoute)
 
 app.listen(process.env.HTTP_PORT, async () => {
     try {
-      await mongoose.connect(process.env.MONGO_CONNECT);
+      await mongoose.connect(`${process.env.MONGO_CONNECT}`);
       console.log("connected db");
     } catch (err) {
       console.log("not-connected");
