@@ -15,7 +15,7 @@ app.use("/login", loginRoute);
 
 
 
-app.use("/book",bookRoute)
+app.use("/books",bookRoute)
 
 
 
